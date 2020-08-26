@@ -69,6 +69,7 @@
         function openNav() {
             document.getElementById("nav").style.display = "block";
             document.getElementById("menu").style.display = "none";
+            document.getElementById("navbarSupportedContent").style.display = "block";
         }
 
         function closeNav() {
@@ -77,16 +78,13 @@
         }
     </script>
 
-    <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-primary pt-3 pb-3" style="display: none; position: fixed; z-index: 1; width: 100%">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-primary pt-3 pb-3" style="display: none; position: fixed; z-index: 1; width: 100%; ">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a href="javascript:void(0)" class="text-light" onclick="closeNav()" style="font-size: 27px; margin: 0px 10px 0px 12px">&times;</a>
+                    <a href="javascript:void(0)" class="text-light" onclick="closeNav()" style="font-size: 27px; margin: 0px 10px 0px 12px;">&times;</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link text-light" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
